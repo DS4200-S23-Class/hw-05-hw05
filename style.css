@@ -1,0 +1,43 @@
+body {
+	font-family: Arial;
+}
+
+.centered {
+	text-align: center;
+}
+
+/* Set additional styling options for the columns */
+.column {
+    float: left;
+}
+
+/* Set width for left & right columns */
+.left {
+    width: 60%;
+}
+    
+.right {
+    width: 40%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.point {
+    fill: blue;
+}
+
+.point:hover {
+    fill:orange;
+}
+
+.bar {
+    fill: blue;
+}
+
+.barChart:hover {
+    fill:orange;
+}
