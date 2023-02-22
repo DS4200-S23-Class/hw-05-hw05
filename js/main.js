@@ -79,6 +79,20 @@ d3.csv("data/scatter-data.csv").then((data) => {
         .call(d3.axisLeft(Y_SCALE1).ticks(10)) 
           .attr("font-size", '20px'); 
 
+  function submitClicked() {
+  let x_val = document.getElementById("user_x").value;
+  let y_val = document.getElementById("user_y").value;
+  FRAME1.insert()
+      .append("circle")
+      .attr("cx", (d) => { return (X_SCALE1(x_val) + MARGINS.left); })
+      .attr("cy", (d) => { return (Y_SCALE1(y_val) + MARGINS.bottom); })
+      .attr("r", 10)
+      .attr("class", "point")
+}
+
+document.getElementById("addButton")
+    .addEventListener('click', submitClicked);
+
 }); 
 
 
