@@ -32,14 +32,54 @@
         </div>
 
     <div id="right-col" class="column right">
-        
+        <div id="lastPt">
+        </div>
+
+        <form id="form-coordinates">
+            Select the x-coordinate for the point you want to add. 
+            <!-- get user input to specify an x and y value in the range 1 to 9 -->
+            <select id="user_x" name="user_x"/>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+
+            <br>
+            <br>
+
+            Select the y-coordinate for the point you want to add. 
+            <select id="user_y" name="user_y"/>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            
+            <br>
+            <br>
+
+            <!-- create a button -->
+            <button type="button" id="addButton">Add Point</button>
 
         </div>
+
+    </div>
 
     <div>
         <!-- Creates a new section for the Acknowledgements which shows an unordered list of resources used in this assignment. -->
 
-        <h1 id= "acknowledgements">Acknowledgements</h1>
+        <h1 id= "acknowledgements" class="centered">Acknowledgements</h1>
 
         <div>
 

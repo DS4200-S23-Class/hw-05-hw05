@@ -34,10 +34,45 @@ body {
     fill:orange;
 }
 
-.bar {
+
+.barChart {
     fill: blue;
 }
 
 .barChart:hover {
     fill:orange;
+}
+
+.d3-tooltip {
+    position: absolute;
+    text-align: left;
+    width: 80px;
+    height: auto;
+    min-height: 20px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 4px;
+    color: #fff;
+    border-radius: 8px 8px 8px 8px;
+    pointer-events: none;
+    padding: 11px;
+    visibility: hidden;
+}
+
+.d3-tooltip-visible {
+    position: absolute;
+    text-align: left;
+    width: 80px;
+    height: auto;
+    min-height: 20px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 4px;
+    color: #fff;
+    border-radius: 8px 8px 8px 8px;
+    pointer-events: none;
+    padding: 11px;
+    visibility: visible;
 }
